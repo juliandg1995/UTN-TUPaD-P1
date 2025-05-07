@@ -8,6 +8,9 @@ intentos = 1
 acertado = random.randint(0,10)
 
 # El juego da pistas al usuario sobre si el número ingresado es mayor o menor al número correcto.
+# También puede salir del juego ingresando 'X'.
+print("¡Bienvenido al juego de adivinar el número!")
+
 while ( (numero := int(input("Ingrese un número entero entre el 0 y el 10: "))) != acertado and stop != 'X'):
     if numero < acertado:
         print("El número ingresado es menor al buscado.\n")
