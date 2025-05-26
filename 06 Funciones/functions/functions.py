@@ -52,3 +52,10 @@ def calcular_perimetro_circulo(radio):
 def segundos_a_horas(segundos):
     return segundos / 3600
 
+# Imprime la tabla de multiplicar de un número dado
+def tabla_multiplicar(numero):
+    print(f"\nTabla de multiplicar del {numero}:")
+    for i in range(1, 11):
+        print(f"{numero} x {i} = {numero * i}")
+    print()
+    
