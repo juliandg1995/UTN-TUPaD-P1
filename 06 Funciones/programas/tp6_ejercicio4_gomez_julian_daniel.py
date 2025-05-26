@@ -11,3 +11,4 @@ import functions as funciones
 radio = funciones.ingresar_numero_flotante("Ingrese el radio de un círculo: ")
 print(f"\nEl área del círculo es: {funciones.calcular_area_circulo(radio):.2f}")
 print(f"\nEl perímetro del círculo es: {funciones.calcular_area_circulo(radio):.2f}")
+
