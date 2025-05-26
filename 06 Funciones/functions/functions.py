@@ -48,3 +48,7 @@ def calcular_area_circulo(radio):
 def calcular_perimetro_circulo(radio):
     return 2 * math.pi * radio
 
+# Convierte de segundos a horas
+def segundos_a_horas(segundos):
+    return segundos / 3600
+
