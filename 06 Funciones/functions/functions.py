@@ -59,3 +59,15 @@ def tabla_multiplicar(numero):
         print(f"{numero} x {i} = {numero * i}")
     print()
     
+# Devuelve operaciones básicas entre dos números:
+def operaciones_basicas(a, b):
+    suma = a + b
+    resta = a - b
+    multiplicacion = a * b
+    division = None if b == 0 else a / b  # Evita división por cero
+
+    return (f"{a} + {b} = {suma}", 
+            f"{a} - {b} = {resta}", 
+            f"{a} * {b} = {multiplicacion}", 
+            f"{a} / {b} = {division}")
+
