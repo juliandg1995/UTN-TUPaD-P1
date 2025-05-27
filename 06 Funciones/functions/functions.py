@@ -71,3 +71,17 @@ def operaciones_basicas(a, b):
             f"{a} * {b} = {multiplicacion}", 
             f"{a} / {b} = {division}")
 
+# Calcula el índice de masa corporal (IMC)
+def calcular_imc(peso, altura):
+    if altura <= 0:
+        return None  # Se evita división por cero o altura negativa
+    imc = peso / (altura ** 2)
+    return round(imc, 2)
+
+# Calcula de celcius a fahrenheit
+def celsius_a_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+# Calcula el promedio de tres números
+def calcular_promedio(a, b, c):
+    return (a + b + c) / 3
