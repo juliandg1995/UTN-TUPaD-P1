@@ -39,3 +39,16 @@ def potencia(base, exponente):
         return 1
     else:
         return base * potencia(base, exponente - 1)
+    
+    
+### Convertir de decimal a binario
+def decimal_a_binario(decimal):
+    # 2 casos base: O la división resulta en 1 o en 0 
+    if decimal == 0:
+        return "0"
+    elif decimal == 1:
+        return "1"
+    else:
+        #La cadena binaria se arma dinámicamente, sin necesidad de declararla dentro de la fn
+        return decimal_a_binario(decimal // 2) + str(decimal % 2)
+    
