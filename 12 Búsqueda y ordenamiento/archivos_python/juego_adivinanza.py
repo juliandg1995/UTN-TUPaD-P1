@@ -16,10 +16,10 @@ while opcion not in ['A', 'B']:
  
 if opcion == 'A':
     # Se genera una lista de números dentro de un rango 1 a n*2
-    print("Se generará una lista de números aleatorios dentro del rango de 1 a n*2.")
+    print(f"Se generará una lista de números aleatorios dentro del rango de 1 a {tamanio*2}.")
     lista = fn.generar_lista_aleatoria_A(tamanio)   
 else:
-    print("Se generará una lista de números secuenciales dentro del rango de 1 a n.")
+    print(f"Se generará una lista de números secuenciales dentro del rango de 1 a {tamanio}.")
     lista = fn.generar_lista_aleatoria_B(tamanio)
     
 # Se ordenar la lista
