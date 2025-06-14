@@ -52,3 +52,28 @@ def decimal_a_binario(decimal):
         #La cadena binaria se arma dinámicamente, sin necesidad de declararla dentro de la fn
         return decimal_a_binario(decimal // 2) + str(decimal % 2)
     
+
+# Determina si la palabra es palindromo de manera recursiva
+# Verifica si los extremos de la cadena son iguales y los elimina hasta vaciar la cadena
+def es_palindromo(palabra):
+    if (len(palabra) <= 1):
+        return True
+    if (palabra[0] != palabra[-1]):
+        return False
+    return es_palindromo(palabra[1:-1])  # Llamada recursiva con la palabra sin los extremos
+
+
+# Suma todos los dígitos de un número
+def suma_digitos(n):
+    if n == 0:
+        return 0
+    return suma_digitos(n//10) + n % 10
+
+# Sumo todos los bloques de una pirámide con base n
+# Utilizo una sumatoria recursiva quitando 1 bloque por nivel
+def contar_bloques(n):
+    if n == 0:
+        return 0
+    return contar_bloques(n-1) + sum(range(1,n+1))
+ 
+    
