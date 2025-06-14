@@ -77,3 +77,10 @@ def contar_bloques(n):
     return contar_bloques(n-1) + sum(range(1,n+1))
  
     
+# Cuenta cuántas veces aparece un dígito en un número entero positivo
+def contar_digito(numero,digito):
+    """Cuenta cuántas veces aparece un dígito en un número entero positivo."""
+    if numero == 0:
+        return 0
+    else:
+        return contar_digito(numero // 10, digito) + ( 1 if numero % 10 == digito else 0 ) 
